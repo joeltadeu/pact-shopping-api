@@ -1,0 +1,20 @@
+database:
+  url: jdbc:mysql://localhost:3306/pact_customer?useSSL=false&useTimezone=true&serverTimezone=UTC
+  username: root
+  password: root
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  zipkin:
+    enabled: false
+
+pactbroker:
+  host: "localhost"
+  port: "9292"
+  auth:
+    username: pact_shopping
+    password: pact_shopping
